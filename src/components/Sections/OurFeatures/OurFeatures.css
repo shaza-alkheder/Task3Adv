@@ -1,0 +1,125 @@
+.ourFeatures {
+    margin-top: 200px;
+    padding-left: 162px;
+    padding-right: 166px;
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .ourFeaturesHeader {
+        padding-left: 300px;
+        padding-right: 300px;
+        gap: 19px;
+
+        .sectionHeader-description {
+            width: 100%;
+        }
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 100px;
+        column-gap: 40px;
+
+        .OurFeaturesCard {
+            max-width: 504px;
+            min-height: 336px;
+            height: stretch;
+            text-align: start;
+
+            .card {
+                /* min-height: inherit; */
+                text-align: start;
+                min-height: stretch;
+
+                h2 {
+                    text-align: start;
+                    margin-right: auto;
+                }
+            }
+        }
+
+
+
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .ourFeatures {
+        margin-top: 150px;
+        padding-left: 1px;
+        padding-right: 1px;
+        gap: 80px;
+
+        .ourFeaturesHeader {
+            padding-left: 200px;
+            padding-right: 200px;
+            gap: 14px;
+
+            .sectionHeader-description {
+                width: 100%;
+            }
+        }
+
+        .cards {
+
+            flex-wrap: wrap;
+            row-gap: 80px;
+            column-gap: 40px;
+
+            .OurFeaturesCard {
+                max-width: 400px;
+                max-height: 243px;
+
+                .card {
+                    /* min-height: 100%; */
+                    min-height: 267px;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .ourFeatures {
+        margin-top: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 50px;
+
+        .ourFeaturesHeader {
+            padding-left: 1px;
+            padding-right: 1px;
+            gap: 10px;
+
+            .sectionHeader-title {
+                width: 80%;
+            }
+
+            .sectionHeader-description {
+                width: 100%;
+            }
+        }
+
+        .cards {
+            row-gap: 60px;
+
+            .OurFeaturesCard {
+                max-width: 358px;
+                gap: 16px;
+                border-radius: 10px;
+                display: flex;
+                /* padding: 50px 40px 30px 30px; */
+            }
+
+        }
+
+    }
+}

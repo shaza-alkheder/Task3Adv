@@ -1,0 +1,147 @@
+.innerHero {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 50px;
+    border-radius: 12px;
+
+    padding: 150px 120px 150px 120px;
+    border: 2px solid #262626;
+    box-shadow: 8px 8px 0px 1px #1E1E1E;
+    margin-top: 60px;
+    background: #FFFFFF url('/assets/img/AbstractDesign.png') no-repeat top left;
+
+
+    .content {
+        width: 80%;
+        gap: 14px;
+        display: flex;
+        flex-direction: column;
+
+        .subtitle {
+            min-width: 117px;
+            width: fit-content;
+            height: 47px;
+            gap: 10px;
+
+            border-radius: 8px;
+            padding: 10px 20px 10px 20px;
+            background: #FFFFFF;
+            border: 2px solid #262626;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: center;
+            color: #333333;
+
+
+        }
+
+        h1 {
+            font-family: Raleway;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 130%;
+            color: #1A1A1A;
+        }
+    }
+
+    .descHero {
+        width: 90%;
+        padding-right: 40px;
+
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            color: #333333;
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .innerHero {
+
+        border-radius: 10px;
+
+        padding: 100px 80px 100px 80px;
+        box-shadow: 6px 6px 0px 1px #1E1E1E;
+        background-size: 138px;
+        margin-top: 40px;
+
+
+        .content {
+            width: 100%;
+            gap: 10px;
+
+
+            .subtitle {
+
+                font-size: 16px;
+                /* width: 100px; */
+                min-width: 100px;
+                width: fit-content;
+                height: 40px;
+                border-radius: 6px;
+                padding: 8px 16px 8px 16px;
+            }
+
+            h1 {
+
+                font-size: 38px;
+            }
+        }
+
+        .descHero {
+            width: 90%;
+            padding-right: 0;
+
+            p {
+                font-size: 16px;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .innerHero {
+
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 50px 24px 50px 30px;
+        gap: 20px;
+        background-size: 100px;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+
+        .content {
+
+            .subtitle {
+                min-width: 92px;
+                width: fit-content;
+                height: 37px;
+                font-size: 14px;
+                align-self: center;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+        }
+
+        .descHero {
+            width: 100%;
+
+            p {
+                font-size: 16px;
+            }
+
+        }
+    }
+}

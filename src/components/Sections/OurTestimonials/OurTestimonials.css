@@ -1,0 +1,222 @@
+.OurTestimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: column;
+    margin-top: 200px;
+
+    .testimonialsHeader {
+
+        padding-right: 300px;
+        padding-left: 300px;
+        gap: 19px;
+
+        .sectionHeader-subTitle {
+            min-width: 217px;
+            height: 47px;
+        }
+
+        .sectionHeader-description {
+            width: 85%;
+        }
+
+
+    }
+
+    .sliders {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        position: relative;
+        width: 100%;
+        --arrow-w: 58px;
+        --slider-gap: 50px;
+        --card-gap: 50px;
+        --card-max: 425.33px;
+        --visible-cards: 3;
+
+        --cards-available: calc(100% - (2 * var(--arrow-w)) - (2 * var(--slider-gap)));
+        --cards-max: calc((var(--visible-cards) * var(--card-max)) + ((var(--visible-cards) - 1) * var(--card-gap)));
+
+        .cards {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: var(--card-gap);
+            width: min(var(--cards-available), var(--cards-max));
+            max-width: min(var(--cards-available), var(--cards-max));
+            flex-shrink: 0;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+
+
+        }
+
+        .arrowLeft,
+        .arrowRight {
+            position: static;
+            flex-shrink: 0;
+            width: var(--arrow-w);
+            height: var(--arrow-w);
+            border-radius: 8px;
+            gap: 10px;
+            padding: 14px;
+            background: #FFFFFF;
+            border: 2px solid #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .OurTestimonials {
+
+        gap: 80px;
+        margin-top: 150px;
+        padding-left: 82px;
+        padding-right: 82px;
+
+        .testimonialsHeader {
+
+            padding-right: 200px;
+            padding-left: 200px;
+            gap: 14px;
+
+
+            .sectionHeader-subTitle {
+                min-width: 185px;
+                height: 40px;
+            }
+
+            .sectionHeader-description {
+                width: 85%;
+            }
+
+        }
+
+        .sliders {
+            /* gap: 40px; */
+            --slider-gap: 40px;
+            --card-gap: 40px;
+            --card-max: clamp(240px, 22.32vw + 18.6px, 340px);
+
+            gap: var(--slider-gap);
+
+            .cards {
+
+                /* gap: 40px; */
+
+            }
+
+            button {
+
+                font-size: 24px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .OurTestimonials {
+
+        gap: 50px;
+        margin-top: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        .testimonialsHeader {
+
+
+            padding: 0;
+            gap: 10px;
+
+
+            .sectionHeader-subTitle {
+                min-width: 166px;
+                height: 37px;
+            }
+
+            .sectionHeader-description {
+                width: 100%;
+            }
+
+
+        }
+
+        .sliders {
+            --slider-gap: 20px;
+            --card-gap: 20px;
+            --arrow-w: 50px;
+            --card-max: 358px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: var(--slider-gap);
+            padding-bottom: calc(var(--arrow-w) + var(--slider-gap));
+            position: relative;
+
+            .cards {
+                order: 1;
+                width: 100%;
+                max-width: var(--card-max);
+                flex: 0 0 100%;
+                min-width: 0;
+                justify-content: flex-start;
+                gap: var(--card-gap);
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                scrollbar-width: none;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+
+            }
+
+            .arrowLeft,
+            .arrowRight {
+                position: absolute;
+                bottom: 0;
+                top: auto;
+            }
+
+            .arrowLeft {
+                left: calc(50% - var(--arrow-w) - (var(--slider-gap) / 2));
+            }
+
+            .arrowRight {
+                left: calc(50% + (var(--slider-gap) / 2));
+            }
+        }
+    }
+
+}

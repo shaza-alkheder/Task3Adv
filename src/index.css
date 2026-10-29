@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    font-family: 'Outfit', sans-serif;
+    background-color: #fff5f0;
+
+}
+
+.format-genirc {
+    padding-left: 162px;
+    padding-right: 166px;
+}
+
+@media screen and (max-width: 1440px) {
+    .format-genirc {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .format-genirc {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}

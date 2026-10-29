@@ -1,0 +1,222 @@
+  .ourTeamCard {
+      display: flex;
+
+      flex-direction: column;
+      max-width: 773px;
+      min-width: 0;
+      min-height: 502px;
+      width: 100%;
+      height: auto;
+      gap: 30px;
+      border-radius: 12px;
+      padding: 50px;
+      background: #FFFFFF;
+      border: 2px solid #262626;
+      box-shadow: 6px 6px 0px 2px #1E1E1E;
+
+      .ourTeamCardHeader {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+
+          .info {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+
+              .imgInfo {
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 12px;
+                  background: #FFF5F0;
+                  border: 2px solid #262626;
+                  display: flex;
+                  align-items: center;
+
+                  img {
+                      width: 100%;
+                      object-fit: cover;
+                      height: 100%;
+                  }
+              }
+
+              h2 {
+                  font-family: Raleway;
+                  font-weight: 800;
+                  font-size: 30px;
+                  line-height: 150%;
+                  color: #333333;
+              }
+
+          }
+
+          .emailInfo {
+              display: flex;
+              align-items: center;
+              width: 56px;
+              height: 56px;
+              gap: 10px;
+              border-radius: 8px;
+              padding: 16px;
+              background: #FFDECC;
+              border: 2px solid #262626;
+
+              img {
+                  width: 100%;
+              }
+          }
+
+
+      }
+
+      .ourTeamCardDesc {
+          display: flex;
+          /* align-items: center; */
+          flex-direction: column;
+          text-align: start;
+          gap: 20px;
+          border-radius: 12px;
+          padding: 30px;
+          background: #FFF5F0;
+          border: 2px solid #262626;
+
+          h2 {
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 150%;
+              color: #333333;
+          }
+
+          p {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 150%;
+              color: #333333;
+          }
+
+      }
+
+  }
+
+  @media screen and (max-width: 1440px) {
+      .ourTeamCard {
+
+          max-width: 620px;
+          min-height: 404px;
+          width: 100%;
+          height: auto;
+          gap: 24px;
+          border-radius: 10px;
+          padding: 40px;
+          box-shadow: 4px 4px 0px 1px #1E1E1E;
+
+
+          .ourTeamCardHeader {
+
+              gap: 16px;
+
+              .info {
+
+                  gap: 12px;
+
+                  .imgInfo {
+                      width: 80px;
+                      height: 80px;
+                      border-radius: 10px;
+
+
+                  }
+
+                  h2 {
+
+                      font-size: 24px;
+
+                  }
+
+              }
+
+              .emailInfo {
+
+                  width: 48px;
+                  height: 48px;
+                  border-radius: 6px;
+                  padding: 14px;
+
+              }
+
+
+          }
+
+          .ourTeamCardDesc {
+
+              gap: 16px;
+              border-radius: 10px;
+              padding: 24px;
+
+
+              h2 {
+                  font-size: 20px;
+
+              }
+
+              p {
+                  font-size: 16px;
+
+              }
+
+          }
+
+      }
+  }
+
+  @media screen and (max-width: 992px) {
+
+      .ourTeamCard {
+
+          /* max-width: 358px; */
+          /* min-height: 404px; */
+          width: 100%;
+          height: auto;
+          padding: 30px;
+
+
+          .ourTeamCardHeader {
+
+              gap: 10px;
+
+              .info {
+
+                  gap: 10px;
+
+                  .imgInfo {
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 8px;
+
+
+                  }
+
+                  h2 {
+
+                      font-size: 20px;
+
+                  }
+
+              }
+
+
+
+
+          }
+
+          .ourTeamCardDesc {
+
+              gap: 12px;
+              padding: 20px;
+
+
+          }
+
+      }
+  }

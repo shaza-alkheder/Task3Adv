@@ -1,0 +1,93 @@
+.studentsLearn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 200px;
+    padding: 2px;
+
+
+    .studentsLearnHeader {
+        padding-left: 300px;
+        padding-right: 300px;
+        gap: 19px;
+
+        .sectionHeader-description {
+            width: 75%;
+        }
+    }
+
+    .studentsLearnCards {
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+
+
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .studentsLearn {
+
+        gap: 80px;
+        margin-top: 150px;
+        padding-left: 80px;
+        padding-right: 80px;
+
+        .studentsLearnHeader {
+            padding-left: 200px;
+            padding-right: 200px;
+            gap: 14px;
+
+            .sectionHeader-description {
+                width: 98%;
+            }
+        }
+
+        .studentsLearnCards {
+
+            gap: 40px;
+
+
+
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .studentsLearn {
+
+        gap: 50px;
+        margin-top: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+
+        .studentsLearnHeader {
+            padding-left: 0;
+            padding-right: 1px;
+            gap: 10px;
+
+            .sectionHeader-description {
+                width: 100%;
+            }
+        }
+
+        .studentsLearnCards {
+            /* flex-direction: column; */
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+
+
+
+
+        }
+    }
+}

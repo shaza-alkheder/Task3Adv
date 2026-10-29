@@ -1,0 +1,119 @@
+.benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 0 24px 0 24px;
+
+    margin-top: 200px;
+
+
+
+    .benefitsHeader {
+        padding-left: 300px;
+        padding-right: 300px;
+        gap: 10px;
+
+        .sectionHeader-description {
+            width: 85%;
+        }
+    }
+
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* gap: 50px; */
+        flex-wrap: wrap;
+        row-gap: 100px;
+        column-gap: 50px;
+
+        .benefitsCard {
+            max-width: 504px;
+            min-height: 306px;
+            height: auto;
+
+            .card {
+                min-height: inherit;
+            }
+        }
+
+
+
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .benefits {
+        gap: 80px;
+        /* margin-top: 150px; */
+        padding-left: 80px;
+        padding-right: 80px;
+
+
+        .benefitsHeader {
+            gap: 14px;
+            padding-left: 200px;
+            padding-right: 200px;
+
+            .sectionHeader-description {
+                width: 98%;
+            }
+
+
+        }
+
+        .cards {
+
+            /* gap: 40px; */
+            flex-wrap: wrap;
+            row-gap: 80px;
+            column-gap: 40px;
+
+            .benefitsCard {
+                max-width: 400px;
+                max-height: 243px;
+            }
+
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .benefits {
+
+        gap: 50px;
+        row-gap: 68px;
+        /* padding: 0; */
+        margin-top: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        .benefitsHeader {
+            gap: 10px;
+            padding-left: 1px;
+            padding-right: 1px;
+
+            .sectionHeader-description {
+                width: 100%;
+            }
+
+
+        }
+
+        .cards {
+
+            /* gap: 40px; */
+            .benefitsCard {
+                max-width: 358px;
+                min-height: 221px;
+            }
+
+        }
+
+    }
+}

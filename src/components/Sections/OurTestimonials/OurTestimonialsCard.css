@@ -1,0 +1,97 @@
+  .card {
+      flex: 0 0 min(calc((100% - ((var(--visible-cards) - 1) * var(--card-gap))) / var(--visible-cards)),
+              var(--card-max));
+      max-width: min(calc((100% - ((var(--visible-cards) - 1) * var(--card-gap))) / var(--visible-cards)),
+              var(--card-max));
+      box-sizing: border-box;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      /* max-width: 425.33px; */
+      min-height: 462px;
+      border-radius: 12px;
+      gap: 30px;
+      padding: 50px;
+      background: #FFFFFF;
+      border: 2px solid #262626;
+      box-shadow: 6px 6px 0px 2px #1E1E1E;
+
+      .person-img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 80px;
+          border-radius: 100px;
+          gap: 10px;
+          padding: 10px;
+          background: #FFF5F0;
+          border: 1px solid #333333;
+      }
+
+      .person-name {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 150%;
+          text-align: center;
+          color: #333333;
+
+      }
+
+      .person-desc {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 150%;
+          text-align: center;
+          color: #333333;
+
+      }
+  }
+
+  @media screen and (max-width: 1440px) {
+      .card {
+
+          min-height: 374px;
+          border-radius: 10px;
+          gap: 24px;
+          padding: 40px;
+          box-shadow: 4px 4px 0px 2px #1E1E1E;
+
+          .person-img {
+
+              width: 66px;
+              height: 66px;
+              padding: 8px;
+
+          }
+
+          .person-name {
+              font-size: 20px;
+
+          }
+
+          .person-desc {
+              font-size: 16px;
+
+
+          }
+      }
+
+  }
+
+  @media screen and (max-width: 992px) {
+      .card {
+          flex: 0 0 100%;
+          width: 100%;
+          max-width: 100%;
+          min-height: 322px;
+          gap: 20px;
+          padding: 30px;
+          box-shadow: 4px 4px 0px 1px #1E1E1E;
+          box-sizing: border-box;
+      }
+
+  }

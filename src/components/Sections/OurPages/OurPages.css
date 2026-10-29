@@ -1,0 +1,299 @@
+.ourPages {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: column;
+    margin-top: 200px;
+
+    .OurPagesHeader {
+
+        padding-right: 300px;
+        padding-left: 300px;
+        gap: 19px;
+
+        .sectionHeader-subTitle {
+            min-width: 147px;
+            height: 47px;
+        }
+
+        .sectionHeader-description {
+            width: 84%;
+        }
+
+
+    }
+
+    .pages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+
+        .cardpage {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            max-width: 773px;
+            min-height: 588px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            /* gap: 80px; */
+            gap: 34px;
+            padding: 80px;
+            background: #FFFFFF;
+            border: 2px solid #262626;
+            box-shadow: 6px 6px 0px 2px #1E1E1E;
+
+            h2 {
+                font-family: Raleway;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 130%;
+                text-align: center;
+                color: #1A1A1A;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 150%;
+                text-align: center;
+                color: #4C4C4D;
+                margin-top: 16px;
+
+            }
+
+            button {
+                max-width: 613px;
+                height: 66px;
+                width: 100%;
+
+                border-radius: 10px;
+                border-width: 2px;
+                padding-top: 18px;
+                padding-bottom: 18px;
+                gap: 10px;
+                background: #FFDECC;
+                border: 2px solid #262626;
+                box-shadow: 4px 4px 0px 2px #1E1E1E;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 36px;
+
+            }
+
+            .dashes {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+
+                .dash {
+                    width: 93.83px;
+                    height: 12px;
+                    padding-top: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 6px;
+                    gap: 10px;
+                    background: #FFBE99;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    div {
+                        border: 2px solid #000000;
+                        width: 100%;
+
+                    }
+
+                    /* border: 2px solid #000000; */
+
+                }
+
+                .circlepageLeft {
+                    position: absolute;
+                    left: -1px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+
+                    border-width: 2px;
+                    background: #FFFFFF;
+                    border: 2px solid #262626;
+                }
+
+                .circlepageRight {
+                    position: absolute;
+                    right: -1px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+
+                    border-width: 2px;
+                    background: #FFFFFF;
+                    border: 2px solid #262626;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .ourPages {
+
+        padding-left: 80px;
+        padding-right: 80px;
+        gap: 80px;
+        margin-top: 150px;
+
+        .OurPagesHeader {
+
+            padding-right: 200px;
+            padding-left: 200px;
+            gap: 14px;
+
+
+            .sectionHeader-subTitle {
+                min-width: 123px;
+                height: 40px;
+            }
+
+            .sectionHeader-description {
+                width: 95%;
+            }
+
+        }
+
+        .pages {
+
+            gap: 40px;
+            flex-wrap: wrap;
+
+            .cardpage {
+
+                max-width: 620px;
+                min-height: 467px;
+                border-radius: 10px;
+                gap: 24px;
+                padding: 60px;
+                box-shadow: 4px 4px 0px 2px #1E1E1E;
+
+                h2 {
+                    font-size: 34px;
+
+                }
+
+                p {
+                    font-size: 16px;
+
+                }
+
+                button {
+                    max-width: 500px;
+                    height: 63px;
+                    border-radius: 8px;
+                    box-shadow: 2px 2px 0px 2px #1E1E1E;
+                    font-size: 18px;
+
+                }
+
+                .dashes {
+
+
+
+                    .dash {
+                        width: 75px;
+
+                    }
+
+
+
+
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .ourPages {
+
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 50px;
+        margin-top: 80px;
+
+        .OurPagesHeader {
+            padding: 4px;
+            gap: 10px;
+
+            .sectionHeader-subTitle {
+                min-width: 112px;
+                height: 37px;
+            }
+
+            .sectionHeader-description {
+                width: 100%;
+            }
+
+
+        }
+
+        .pages {
+
+
+            .cardpage {
+                width: 100%;
+                /* max-width: 358px;
+                min-height: 426px; */
+                min-height: 426px;
+                gap: 20px;
+                /* padding: 40px; */
+                padding: 20px;
+                box-shadow: 4px 4px 0px 2px #1E1E1E;
+
+                h2 {
+                    font-size: 28px;
+
+                }
+
+
+                button {
+                    max-width: 278px;
+                    height: 56px;
+                    border-radius: 6px;
+                    font-size: 16px;
+
+                }
+
+                .dashes {
+                    gap: 6px;
+
+                    .dash {
+                        width: 38px;
+
+
+
+
+                    }
+
+
+                }
+
+            }
+        }
+
+    }
+}

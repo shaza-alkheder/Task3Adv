@@ -1,0 +1,88 @@
+.sectionHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 300px;
+    padding-left: 300px;
+
+    .sectionHeader-subTitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #333333;
+        border: 2px solid #000000;
+        background: #FFFFFF;
+        border-radius: 8px;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    .sectionHeader-title {
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 130%;
+        text-align: center;
+        color: #1A1A1A;
+    }
+
+    .sectionHeader-description {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        color: #333333;
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+    .sectionHeader {
+        gap: 14px;
+        padding-right: 200px;
+        padding-left: 200px;
+
+        .sectionHeader-subTitle {
+            font-size: 16px;
+            border-radius: 6px;
+            padding: 8px 14px;
+        }
+
+        .sectionHeader-title {
+            font-size: 48px;
+        }
+
+        .sectionHeader-description {
+            font-size: 16px;
+            width: 98%;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .sectionHeader {
+        gap: 10px;
+        padding: 0;
+
+        .sectionHeader-subTitle {
+            font-size: 14px;
+        }
+
+        .sectionHeader-title {
+            font-size: 38px;
+        }
+
+        .sectionHeader-description {
+            width: 100%;
+        }
+
+    }
+
+}

@@ -1,0 +1,219 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* min-height: 100vh; */
+    max-height: 100vh;
+    width: 100%;
+    gap: 60px;
+    padding: 80px 112px 60px 118px;
+
+    .heroImage {
+        flex: 1 1 51%;
+        min-width: 0;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 765px;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .content {
+        flex: 1 1 49%;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+
+        .welcom-content {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 1.5;
+            border-bottom: 2px solid #262626;
+            padding-bottom: 6px;
+        }
+
+        h1 {
+            font-family: Raleway;
+            font-weight: 800;
+            font-size: 54px;
+            /*  font-size: clamp(32px, 3.75vw, 54px); */
+            line-height: 130%;
+            line-height: 1.3;
+            overflow-wrap: break-word;
+
+            & span {
+                color: #FF8D4D;
+            }
+        }
+
+        .description {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.5;
+
+
+        }
+
+        .counter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            border-radius: 12px;
+            padding-top: 24px;
+            padding-right: 50px;
+            padding-bottom: 24px;
+            padding-left: 50px;
+            gap: 13px;
+            background: #FFEFE5;
+            border: 2px solid #262626;
+            box-shadow: 8px 8px 0px 1px #FFBE99;
+            width: 100%;
+
+            p {
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 18px;
+                line-height: 150%;
+                color: #262626;
+
+            }
+
+            h2 {
+                font-weight: 800;
+                font-size: 44px;
+                line-height: 150%;
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .hero {
+        gap: 50px;
+        padding: 50px 10px;
+
+        .heroImage {
+            flex-basis: 50%;
+
+        }
+
+        .content {
+            flex-basis: 50%;
+            gap: 20px;
+
+            .welcom-content {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 40px;
+                /*  font-size: clamp(30px, 3.2vw, 40px); */
+            }
+
+            .description {
+                font-size: 16px;
+
+            }
+
+            .counter {
+
+                border-radius: 10px;
+                padding: 20px 40px;
+                gap: 10px;
+                background: #FFEFE5;
+                box-shadow: 6px 6px 0px 1px #FFBE99;
+                margin-top: 30px;
+
+                p {
+                    font-size: 16px;
+                }
+
+                h2 {
+                    font-size: 34px;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .hero {
+        min-height: auto;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        /* justify-content: start; */
+        /* padding: 35px 0; */
+        padding: 50px 0;
+        max-height: none;
+
+        .heroImage {
+            flex: none;
+            width: 100%;
+            max-width: 615px;
+        }
+
+        .content {
+            flex: none;
+            width: 100%;
+            max-width: 615px;
+            gap: 10px;
+            align-items: center;
+
+            .welcom-content {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: clamp(30px, 5vw, 40px);
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .description {
+                font-size: 16px;
+                text-align: center;
+
+            }
+
+            .counter {
+                flex-direction: column;
+                text-align: center;
+                border-radius: 10px;
+                gap: 20px;
+                padding: 40px;
+                border: 2px solid #262626;
+                box-shadow: 4px 4px 0px 1px #FFBE99;
+                margin-top: 30px;
+
+                div {
+                    border-bottom: 2px solid #262626;
+                    width: 100%;
+                    padding-bottom: 20px;
+
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
