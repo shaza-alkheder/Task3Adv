@@ -1,0 +1,65 @@
+.ourHistory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 200px;
+    padding: 2px;
+
+
+    .studentsLearnHeader {
+        padding-left: 300px;
+        padding-right: 300px;
+        gap: 19px;
+
+        .sectionHeader-description {
+            width: 77%;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .ourHistory {
+
+        gap: 80px;
+        margin-top: 154px;
+        padding-left: 80px;
+        padding-right: 80px;
+
+
+        .studentsLearnHeader {
+            padding-left: 200px;
+            padding-right: 200px;
+            gap: 14px;
+
+            .sectionHeader-description {
+                width: 95%;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .ourHistory {
+
+        gap: 50px;
+        margin-top: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+
+        .studentsLearnHeader {
+            padding-left: 1px;
+            padding-right: 1px;
+            gap: 10px;
+
+            .sectionHeader-description {
+                width: 100%;
+            }
+        }
+    }
+
+}
