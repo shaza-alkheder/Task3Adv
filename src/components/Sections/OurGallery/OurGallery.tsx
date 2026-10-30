@@ -3,6 +3,7 @@ import SectionHeader from '../../UI/SectionHeader/SectionHeader'
 import './OurGallery.css'
 import { OurGalleryData } from '../../../data/OurGalleryData'
 import OurGalleryCard from './OurGalleryCard'
+import { OurGalleryHeaderData } from '../../../data/SectionHeadersData'
 
 const OurGallery = () => {
     const categories = [
@@ -25,10 +26,8 @@ const OurGallery = () => {
         <>
             <section className='ourGallery' id='ourGallery'>
                 <SectionHeader
-                    className="ourGalleryHeader"
-                    subTitle="Our Gallery"
-                    title="Our Rooms Gallery"
-                    description="Step into our Gallery and immerse yourself in a visual journey of cherished moments and unforgettable experiences at our kindergarten school."
+                    {...OurGalleryHeaderData}
+                    className="FAQHeader"
                 />
                 <div className='ourGalleryDiv'>
                     <div className='ourGalleryBtn'>

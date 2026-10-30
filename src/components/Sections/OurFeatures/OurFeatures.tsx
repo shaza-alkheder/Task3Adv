@@ -1,4 +1,5 @@
 import { OurFeaturesData } from '../../../data/OurFeaturesData'
+import { OurFeaturesHeaderData } from '../../../data/SectionHeadersData'
 import FeatureCard from '../../UI/FeatureCard/FeatureCard'
 import SectionHeader from '../../UI/SectionHeader/SectionHeader'
 import './OurFeatures.css'
@@ -7,10 +8,8 @@ const OurFeatures = () => {
         <>
             <section id='ourFeatures' className='ourFeatures'>
                 <SectionHeader
-                    className="ourFeaturesHeader"
-                    subTitle="Our Features"
-                    title="Our Special Features"
-                    description="Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!"
+                    {...OurFeaturesHeaderData}
+                    className="FAQHeader"
                 />
                 <div className='cards'>
                     {OurFeaturesData.map((data) => (

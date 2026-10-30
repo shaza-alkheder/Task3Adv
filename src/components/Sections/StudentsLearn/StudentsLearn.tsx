@@ -1,3 +1,4 @@
+import { StudentsLearnHeaderData } from '../../../data/SectionHeadersData'
 import { StudentsLearnData } from '../../../data/StudentsLearnData'
 import SectionHeader from '../../UI/SectionHeader/SectionHeader'
 import './StudentsLearn.css'
@@ -7,10 +8,8 @@ const StudentsLearn = () => {
         <>
             <section id='studentsLearn' className='studentsLearn'>
                 <SectionHeader
-                    className="studentsLearnHeader"
-                    subTitle="Our Features"
-                    title="What Students Learn"
-                    description="At Little Learners Academy, we strive to cultivate a love for learning and equip children with essential skills for their future success. Our academic programs cover a wide range of subjects, allowing students to develop a strong foundation and discover their interests. Some key areas of learning include"
+                    {...StudentsLearnHeaderData}
+                    className="FAQHeader"
                 />
                 <div className='studentsLearnCards'>
                     {/* <div className='studentsLearnCard'>

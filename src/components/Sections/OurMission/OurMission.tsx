@@ -1,4 +1,5 @@
 import { missionVisionData } from "../../../data/OurMissionData"
+import { OurMissionHeaderData } from "../../../data/SectionHeadersData"
 import SectionHeader from "../../UI/SectionHeader/SectionHeader"
 import './OurMission.css'
 const OurMission = () => {
@@ -6,10 +7,8 @@ const OurMission = () => {
         <>
             <section id="ourMission" className="ourMission">
                 <SectionHeader
-                    className="ourMissionHeader"
-                    subTitle="Mission & Visions"
-                    title="Our Mission & Visions"
-                    description="We are here to provide a nurturing and inclusive environment where young minds can thrive, fostering a love for learning and personal growth."
+                    {...OurMissionHeaderData}
+                    className="FAQHeader"
                 />
                 <div className="cardsMission">
                     {missionVisionData.map((data) => (

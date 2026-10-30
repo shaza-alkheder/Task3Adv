@@ -1,4 +1,5 @@
 import { OurTeamData } from '../../../data/OurTeamData'
+import { OurTeamHeaderData } from '../../../data/SectionHeadersData'
 import SectionHeader from '../../UI/SectionHeader/SectionHeader'
 import './OurTeam.css'
 import OurTeamCard from './OurTeamCard'
@@ -8,10 +9,8 @@ const OurTeam = () => {
         <>
             <section id='ourTeam' className='ourTeam'>
                 <SectionHeader
-                    className="ourTeamHeader"
-                    subTitle="Our Teachers With Experties"
-                    title="Our Team Members"
-                    description="At Little Learners Academy, our teaching team is the heart of our educational journey. We take great pride in employing highly qualified and passionate educators who possess a deep understanding of early childhood development. Our teachers create a warm and engaging atmosphere, encouraging curiosity, instilling confidence, and fostering a love for learning."
+                    {...OurTeamHeaderData}
+                    className="FAQHeader"
                 />
 
                 <div className='ourTeamCards'>

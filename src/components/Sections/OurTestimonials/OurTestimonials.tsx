@@ -5,6 +5,7 @@ import { OurTestimonialsData } from '../../../data/OurTestimonialsData'
 import OurTestimonialsCard from './OurTestimonialsCard'
 import SectionHeader from '../../UI/SectionHeader/SectionHeader'
 import { slider } from '../../UI/Slider/slider'
+import { OurTestimonialsHeaderData } from '../../../data/SectionHeadersData'
 
 const OurTestimonials = () => {
     const cardsRef = useRef<HTMLDivElement>(null)
@@ -12,10 +13,8 @@ const OurTestimonials = () => {
         <>
             <section className='OurTestimonials' id='testimonials'>
                 <SectionHeader
-                    className="testimonialsHeader"
-                    subTitle="Their Happy Words 🤗"
-                    title="Our Testimonials"
-                    description="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
+                    {...OurTestimonialsHeaderData}
+                    className="FAQHeader"
                 />
                 <div className='sliders'>
 

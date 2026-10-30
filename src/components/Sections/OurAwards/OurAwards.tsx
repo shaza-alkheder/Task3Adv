@@ -5,6 +5,7 @@ import FeatureCard from '../../UI/FeatureCard/FeatureCard'
 import { OurAwardsData } from '../../../data/OurAwardsData'
 import { useEffect, useRef, useState } from 'react'
 import { slider } from '../../UI/Slider/slider'
+import { OurAwardsHeaderData } from '../../../data/SectionHeadersData'
 
 const OurAwards = () => {
     const cardsRef = useRef<HTMLDivElement>(null)
@@ -49,10 +50,8 @@ const OurAwards = () => {
         <>
             <section id='OurAwards' className='OurAwards'>
                 <SectionHeader
-                    className="OurAwardsHeader"
-                    subTitle="Our Achievements"
-                    title="Our Awards and Recognitions"
-                    description="Little Learners Academy takes pride in our commitment to delivering high-quality education and outstanding student experiences. We are honored to have received various awards and recognitions for our dedication to early childhood education. These accolades reflect our team's relentless efforts in creating an exceptional learning environment for our students."
+                    {...OurAwardsHeaderData}
+                    className="FAQHeader"
                 />
                 <div className='OurAwardsSliders'>
                     <div className='OurAwardsCards' ref={cardsRef}>
