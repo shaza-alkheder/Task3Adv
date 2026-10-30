@@ -108,3 +108,10 @@ export interface OurGalleryItem {
     description: string
     images: string[]
 }
+
+export interface OurHistoryItem {
+    id: number
+    year: string
+    title: string
+    description: string
+}

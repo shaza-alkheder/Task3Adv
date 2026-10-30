@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import type { FAQItem } from "../../../interfaces";
+import './FAQCard.css'
 
 interface FAQCardProps {
     faq: FAQItem;

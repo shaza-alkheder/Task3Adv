@@ -1,0 +1,335 @@
+   .ourHistoryDiv {
+       display: flex;
+       justify-content: space-between;
+       gap: 50px;
+
+       .groupHistory {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           align-items: center;
+           position: relative;
+           /* width: 100%; */
+
+
+
+           .contentDiv {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap: 50px;
+
+               .dateourHistory {
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   gap: 20px;
+                   width: 364.31px;
+                   height: 148px;
+                   border-radius: 12px;
+                   padding: 30px 50px;
+                   background: #FFFFFF;
+                   border: 2px solid #262626;
+                   box-shadow: 6px 6px 0px 2px #1E1E1E;
+
+                   img {
+                       width: 87.30px;
+                       object-fit: contain;
+                   }
+
+                   h2 {
+                       font-family: Raleway;
+                       font-weight: 700;
+                       font-size: 68px;
+                       line-height: 130%;
+                       color: #1A1A1A;
+                   }
+
+
+
+               }
+
+               .content {
+                   display: flex;
+                   flex-direction: column;
+                   gap: 20px;
+                   justify-content: space-between;
+
+                   h2 {
+                       font-family: Raleway;
+                       font-weight: 700;
+                       font-size: 28px;
+                       line-height: 130%;
+                       color: #1A1A1A;
+
+                   }
+
+                   p {
+                       font-weight: 500;
+                       font-size: 20px;
+                       line-height: 150%;
+                       color: #333333;
+                   }
+               }
+           }
+
+
+           .dashes {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               /* gap: 10px; */
+               position: relative;
+               z-index: 1;
+
+               .dash {
+                   width: 95px;
+                   height: 12px;
+                   padding-top: 6px;
+                   padding-right: 6px;
+                   padding-bottom: 6px;
+                   gap: 10px;
+                   background: #FFBE99;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+
+
+                   div {
+                       border: 2px solid #000000;
+                       width: 49px;
+
+
+                   }
+
+
+               }
+
+               .circlepageLeft,
+               .circlepageRight {
+                   position: absolute;
+                   width: 20px;
+                   height: 20px;
+                   border-radius: 50%;
+                   background: #FFFFFF;
+                   border: 2px solid #262626;
+                   box-sizing: border-box;
+                   z-index: 2;
+               }
+
+               .circlepageLeft {
+                   left: -1px;
+
+               }
+
+               .circlepageRight {
+                   right: -1px;
+
+               }
+
+           }
+
+           .verticalDash {
+               position: absolute;
+               top: 50%;
+               left: 0;
+               transform: translateX(7px);
+               width: 12px;
+               height: calc(100% + 100px);
+               padding-top: 6px;
+               padding-right: 6px;
+               padding-bottom: 6px;
+               gap: 10px;
+               background: #FFBE99;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+               div {
+                   border: 2px solid #000000;
+                   width: 0;
+                   height: 100%;
+               }
+           }
+       }
+
+       &:last-child {
+           .verticalDash {
+               display: none;
+           }
+       }
+
+
+
+   }
+
+   @media screen and (max-width: 1440px) {
+       .ourHistoryDiv {
+
+           gap: 50px;
+
+           .groupHistory {
+
+               .contentDiv {
+
+                   gap: 40px;
+
+                   .dateourHistory {
+
+                       width: 259px;
+                       height: 110px;
+                       border-radius: 10px;
+                       padding: 24px 34px;
+                       box-shadow: 4px 4px 0px 1px #1E1E1E;
+
+
+                       img {
+                           width: 60x;
+                           object-fit: contain;
+                       }
+
+                       h2 {
+
+                           font-size: 48px;
+
+                       }
+
+
+
+                   }
+
+                   .content {
+
+                       gap: 16px;
+
+                       h2 {
+
+                           font-size: 24px;
+
+
+                       }
+
+                       p {
+                           font-size: 16px;
+
+                       }
+                   }
+               }
+
+               .dashes {
+
+                   .dash {
+                       width: 84px;
+                       height: 20px;
+
+                       div {
+                           width: 44px;
+                       }
+
+                   }
+
+
+               }
+
+               .verticalDash {
+                   height: calc(100% + 80px);
+               }
+           }
+
+
+
+       }
+
+   }
+
+
+   @media screen and (max-width: 992px) {
+       .ourHistoryDiv {
+
+
+           gap: 50px;
+
+           .groupHistory {
+               align-items: flex-start;
+
+
+               .contentDiv {
+
+                   gap: 30px;
+                   flex-direction: column;
+                   align-items: baseline;
+
+                   .dateourHistory {
+
+                       width: 206px;
+                       height: 90px;
+                       padding: 20px 24px;
+
+
+                       img {
+                           width: 50px;
+                           object-fit: contain;
+                       }
+
+                       h2 {
+
+                           font-size: 38px;
+
+                       }
+
+
+
+                   }
+
+                   .content {
+
+                       gap: 12px;
+
+                       h2 {
+
+                           font-size: 22px;
+
+
+                       }
+
+                       p {
+                           font-size: 16px;
+
+                       }
+                   }
+               }
+
+               .dashes {
+                   margin-top: 35px;
+
+                   .dash {
+                       width: 62px;
+                       height: 20px;
+
+                       div {
+                           width: 22px;
+                       }
+
+                   }
+
+
+               }
+
+               .verticalDash {
+                   top: 45px;
+                   height: calc(100% + 50px);
+               }
+
+           }
+
+           &:last-child {
+               .verticalDash {
+                   display: none;
+               }
+           }
+
+
+
+       }
+
+   }

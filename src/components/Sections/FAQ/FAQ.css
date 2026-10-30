@@ -29,75 +29,6 @@
         gap: 50px;
         column-gap: 50px;
 
-        .cardfaq {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            /* align-items: center; */
-            min-width: 0;
-            max-width: 771px;
-            /* height: 108; */
-
-            border-radius: 12px;
-            padding: 34px 40px;
-
-            gap: 30px;
-            background: #FFEFE5;
-
-            border: 2px solid #262626;
-            break-inside: avoid;
-            margin-bottom: 50px;
-
-            &.open {
-                background: #FFFFFF;
-            }
-
-            .faqQuestion {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 30px;
-
-                p {
-                    flex: 1;
-                    margin: 0;
-                    font-weight: 600;
-                    font-size: 22px;
-                    line-height: 150%;
-
-                    &.open {
-                        padding-bottom: 20px;
-                        border-bottom: 2px solid #262626;
-                    }
-                }
-
-                button {
-                    flex-shrink: 0;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 6px;
-                    padding: 8px;
-                    background: #FFF5F0;
-                    border: 2px solid #262626;
-                    font-size: 24px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    cursor: pointer;
-                }
-            }
-
-            .faqAnswer {
-                margin: 0;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 150%;
-                color: #333333;
-                padding-right: 100px;
-            }
-
-        }
-
 
     }
 }
@@ -129,36 +60,6 @@
         .faqCards {
             column-gap: 40px;
 
-            .cardfaq {
-
-                max-width: 620px;
-                border-radius: 10px;
-                padding: 24px 30px;
-                gap: 24px;
-
-                .faqQuestion {
-                    gap: 24px;
-
-                    p {
-                        font-size: 18px;
-
-                    }
-
-                    button {
-                        width: 32px;
-                        height: 32px;
-                        border-radius: 4px;
-                        padding: 6px;
-                        font-size: 20px;
-                    }
-                }
-
-                .faqAnswer {
-                    font-size: 16px;
-                    padding-right: 60px;
-                }
-
-            }
 
 
         }
@@ -191,40 +92,6 @@
         .faqCards {
             columns: 1;
             column-gap: 0;
-
-            .cardfaq {
-
-                /* max-width: 358px; */
-                border-radius: 10px;
-                padding: 20px 24px;
-                gap: 20px;
-                margin-bottom: 20px;
-
-                .faqQuestion {
-
-                    &.open {
-                        padding-bottom: 20px;
-                        border-bottom: 2px solid #262626;
-                    }
-
-                    p {
-
-
-                        &.open {
-                            padding-bottom: 0;
-                            border-bottom: none;
-                        }
-                    }
-
-                }
-
-                .faqAnswer {
-
-                    padding-right: 0;
-                }
-
-            }
-
 
         }
     }

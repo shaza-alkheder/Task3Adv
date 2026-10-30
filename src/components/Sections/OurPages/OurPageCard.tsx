@@ -1,5 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import type { OurPageItem } from "../../../interfaces";
+import './OurPageCard.css'
 
 interface OurPageCardProps {
     page: OurPageItem;
